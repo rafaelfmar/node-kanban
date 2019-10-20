@@ -7,8 +7,6 @@ mongoose.connect('mongodb://localhost:27017/node-kanban', {
   useNewUrlParser: true
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello node');
-});
+app.use('/', require('./src/routes'));
 
 app.listen(3000);
