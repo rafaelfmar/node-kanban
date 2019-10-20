@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+const ListInit = require('../models/List');
 const List = mongoose.model('List');
 
 module.exports = {

@@ -4,7 +4,7 @@ const routes = express.Router();
 const ListController = require('./controllers/ListController');
 
 routes.get('/', (req, res) => {
-  return res.send('Hello node!');
+  return res.render('index', { layout: false });
 });
 
 routes.get('/lists', ListController.index);
